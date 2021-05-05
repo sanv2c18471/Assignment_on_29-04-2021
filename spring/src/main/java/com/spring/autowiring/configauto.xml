@@ -30,6 +30,10 @@
    <!-- bean class = "com.spring.autowiring.Student"  name="student" autowire="constructor" />-->
    
    
-   <bean class = "com.spring.autowiring.Student"  name="student" />
+   <!-- bean class = "com.spring.autowiring.Student"  name="student" /> -->
+   
+   
+    <bean class = "com.spring.autowiring.Student"  name="student" scope="prototype" />
+   
    
 </beans>
