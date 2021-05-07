@@ -35,7 +35,6 @@ public class Popcorn implements InitializingBean,DisposableBean {
 		// TODO Auto-generated method stub
 		System.out.println("Disposable end: Destroy method");
 	}
-	
-	
+
 }
 
