@@ -14,6 +14,6 @@ public interface EmployeeDAO {
 	
 	 public Employee getEmployee(int id);// select for single
 	 
-	 //public List<Employee> getAllEmployees();//select for multiple
+	 public List<Employee> getAllEmployees();//select for multiple
 	 
 }

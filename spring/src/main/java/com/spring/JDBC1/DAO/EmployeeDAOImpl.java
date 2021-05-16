@@ -2,16 +2,21 @@ package com.spring.JDBC1.DAO;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCallback;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Component;
 
 import com.spring.JDBC1.Employee;
 import com.spring.JDBC1.RowMapperImpl1;
 
+@Component("empDAO")
 public class EmployeeDAOImpl implements EmployeeDAO {
+	@Autowired
 	private JdbcTemplate jdbctemplate;
 
 	@Override
@@ -69,12 +74,12 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
 	}
 
-//	public List<Employee> getAllEmployees() {
-//		// TODO Auto-generated method stub
-//		String query = "select * from Employee";
-//		RowMapper<Employee> rowMapper = new RowMapperImpl1();
-//		List<Employee> employee = this.jdbctemplate.query(query, rowMapper);
-//		return employee;
-//
-//	}
+	public List<Employee> getAllEmployees() {
+		// TODO Auto-generated method stub
+		String query = "select * from Employee";
+		RowMapper<Employee> rowMapper = new RowMapperImpl1();
+		List<Employee> employee = this.jdbctemplate.query(query, rowMapper);
+		return employee;
+
+	}
 }
