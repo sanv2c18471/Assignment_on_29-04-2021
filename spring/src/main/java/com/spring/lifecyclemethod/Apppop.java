@@ -12,6 +12,6 @@ public static void main(String[] args) {
 	System.out.println(pop);
 	System.out.println(ice);
 	System.out.println(pep);
-	context.registerShutdownHook();
+	context.registerShutdownHook();//destroy purpose and abstract is also for destroy purpose
 }
 }

@@ -6,14 +6,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Appautowire {
 public static void main(String[] args) {
 	ApplicationContext context =new ClassPathXmlApplicationContext("com/spring/autowiring/configauto.xml");
-	Student stu= (Student)context.getBean("student");
-	//System.out.println(stu);
-	System.out.println(stu.hashCode());
+   Student stu= (Student)context.getBean("student");
+	System.out.println(stu);
+	//System.out.println(stu.hashCode());
 	
-	//Student stu = context.getBean("student", Student.class);
+	//Student stu = context.getBean("student", Student.class); similar to line 9 
 	//System.out.println(stu);
 	
-	Student stu1= (Student)context.getBean("student");
-	System.out.println(stu1.hashCode());
+//	Student stu1= (Student)context.getBean("student");
+//	System.out.println(stu1.hashCode());
 }
 }

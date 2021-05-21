@@ -20,7 +20,7 @@ public void setAddress(Address address) {
 
 public Student() {
 	super();
-	System.out.println("constructor injection method");
+	//System.out.println("constructor injection method");
 	// TODO Auto-generated constructor stub
 }
 

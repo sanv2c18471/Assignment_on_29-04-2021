@@ -24,16 +24,16 @@
  <!--bean class = "com.spring.autowiring.Student"  name="student" autowire="byName" />-->
  
  
-  <!--  bean class = "com.spring.autowiring.Student"  name="student" autowire="byType" />-->
+  <!--bean class = "com.spring.autowiring.Student"  name="student" autowire="byType" />-->
   
   
-   <!-- bean class = "com.spring.autowiring.Student"  name="student" autowire="constructor" />-->
+   <bean class = "com.spring.autowiring.Student"  name="student" autowire="constructor" /> <!-- must have parameter -->
    
    
-   <!-- bean class = "com.spring.autowiring.Student"  name="student" /> -->
+   <!--bean class = "com.spring.autowiring.Student"  name="student" /> -->
    
    
-    <bean class = "com.spring.autowiring.Student"  name="student" scope="prototype" />
+    <!--bean class = "com.spring.autowiring.Student"  name="student" scope="prototype" /> -->
    
    
 </beans>

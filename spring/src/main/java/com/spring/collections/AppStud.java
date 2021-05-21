@@ -11,5 +11,6 @@ public class AppStud {
         System.out.println(stud1.getParents());
         System.out.println(stud1.getPhones());
         System.out.println(stud1.getSubject());
+        System.out.println(stud1);
     }
 }

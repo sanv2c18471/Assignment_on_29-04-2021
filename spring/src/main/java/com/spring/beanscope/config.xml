@@ -10,12 +10,12 @@
      
 
 
- <bean class = "com.spring.beanscope.Student"  name="stud">
+ <bean class = "com.spring.beanscope.Student"  name="stud">  <!-- without scope(singleton) will have same hash code for different object -->
  <property name="id" value ="101"/>
  <property name="name" value ="Sam"/>
   </bean>
   
-  <bean class = "com.spring.beanscope.Employee"  name="emplo" scope="prototype" >
+  <bean class = "com.spring.beanscope.Employee"  name="emplo" scope="prototype" > <!-- scope print different hash code with different object-->
  <property name="empId" value ="201"/>
  <property name="empName" value ="Abi"/>
   </bean>
